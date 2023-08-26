@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent {
+  todos: string[] = [];
 
+  addTodo(): void {
+    console.log('Aktualna lista todo', this.todos)
+  }
 }
