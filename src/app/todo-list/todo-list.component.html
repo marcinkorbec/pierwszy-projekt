@@ -10,8 +10,14 @@
         type="checkbox"
         class="form-check-input my-1"
         [checked]="todo.isComplete"
+        (change)="toggleComplete(i)"
       >
-      <span class="todo-item">{{ i + 1}}. {{todo.name}}</span>
+      <span
+        class="todo-item"
+        [ngStyle]="{ 'text-decoration': todo.isComplete ? 'line-through' : 'none' }"
+      >
+        {{ i + 1 }}. {{ todo.name }}
+      </span>
     </li>
   </ul>
 </div>

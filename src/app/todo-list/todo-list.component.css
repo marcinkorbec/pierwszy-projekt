@@ -5,3 +5,7 @@
 .todo-item {
   margin-left: 10px;
 }
+
+.checked {
+  text-decoration: line-through;
+}
